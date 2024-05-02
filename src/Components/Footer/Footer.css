@@ -1,0 +1,128 @@
+.footer {
+    margin-top: 50px;
+    background: black;
+    padding: 20px;
+    color: white;
+}
+
+.footer .iner-container {
+    margin: 0 50px;
+}
+
+.footer .iner-container .top-container {
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .iner-container .top-container .social {
+    margin: 10px;
+}
+
+.footer .iner-container .top-container .social-links {
+    display: flex;
+    margin: 10px 0;
+}
+
+footer .iner-container .top-container .social-links {
+    display: flex;
+}
+
+.footer .iner-container .top-container .social-links p {
+    margin: 10px;
+}
+
+.footer .iner-container .top-container .social-links p:first-child {
+    margin-left: 0;
+}
+
+.footer .iner-container .top-container {
+    display: flex;
+}
+
+.footer .brand-build {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.footer .brand-build h2 {
+    width: 150px;
+    line-height: 0.8;
+}
+
+.footer .brand-build h2 span {
+    font-size: 18px;
+}
+
+.footer .brand-logo {
+    height: 3rem;
+}
+
+.iner-container .container1 {
+    margin: 20px 0;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iner-container .container1 h2 {
+    margin: 10px 0;
+}
+
+.iner-container .container1 li {
+    margin: 10px 0;
+}
+
+.bottom-container {
+    display: flex;
+}
+
+.bottom-container .title-h6 {
+    font-size: 22px
+}
+
+.bottom-container .bottom-left .form-control {
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    display: flex;
+    height: 8vh;
+    width: 30vw;
+    align-items: center;
+    cursor: text;
+}
+
+
+.bottom-container .bottom-left .form-control .sub-box {
+    width: 100%;
+}
+
+.bottom-container .bottom-left .form-control .sub-box .input-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5px;
+    padding-left: 10px;
+}
+
+.bottom-container .bottom-left .form-control .sub-box .input-group input {
+    background: transparent;
+    border: transparent;
+    outline: transparent;
+}
+
+.bottom-container .bottom-left .form-control .sub-box .input-group input::placeholder {
+    color: white;
+}
+
+
+.bottom-container .bottom-left .form-control .sub-box .input-group button {
+    padding: 15px 35px;
+    border-radius: 10px;
+    border: none;
+    background: crimson;
+    color: white;
+}
