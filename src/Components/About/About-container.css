@@ -1,0 +1,132 @@
+.about-section {
+    background: #eef2f6;
+    padding: 10px 0;
+}
+
+.innerdiv {
+    margin: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.erp-banner {
+    width: 45vw;
+    border-radius: 30px;
+}
+
+.about {
+    padding: 50px;
+    width: 40vw;
+    border-radius: 15px;
+    height: auto;
+}
+
+.about h1 {
+    font-size: 45px;
+    margin: 20px 0;
+    color: #000;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .innerdiv {
+        margin: 50px;
+        /* Adjust margin for smaller screens */
+    }
+
+    .erp-banner,
+    .about {
+        width: 100%;
+        /* Set width to 100% for smaller screens */
+        max-width: none;
+        /* Remove max-width limit */
+        border-radius: 0;
+        /* Remove border radius */
+    }
+
+    .about {
+        padding: 40px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .about h1 {
+        font-size: 40px;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .innerdiv {
+        margin: 30px;
+        /* Adjust margin for smaller screens */
+    }
+
+    .about {
+        padding: 30px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .about h1 {
+        font-size: 35px;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 428px) {
+    .innerdiv {
+        margin: 20px;
+        /* Adjust margin for smaller screens */
+    }
+
+    .about {
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .about h1 {
+        font-size: 25px;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 375px) {
+    .innerdiv {
+        margin: 15px;
+        /* Adjust margin for smaller screens */
+    }
+
+    .about {
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .about h1 {
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 320px) {
+    .innerdiv {
+        margin: 10px;
+        /* Adjust margin for smaller screens */
+    }
+
+    .about {
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .about h1 {
+        font-size: 18px;
+        /* Adjust font size for smaller screens */
+    }
+}
