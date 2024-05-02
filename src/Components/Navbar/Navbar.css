@@ -1,0 +1,155 @@
+/* all similar content styling codes */
+.max-width {
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-logo {
+    height: 2.5em;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    position: relative;
+    transition: color 0.3s ease;
+
+}
+
+.navbar .menu li a::before {
+
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #67C6E3;
+    transition: width 0.3s ease;
+    /* Add this */
+}
+
+.navbar .menu li a:hover::before {
+    /* Add this */
+    width: 100%;
+}
+
+.navbar .menu li a:hover {
+    color: #67C6E3;
+}
+
+.sticky li {
+    color: #DFD0B8;
+}
+
+.navbar.sticky .menu li a {
+    color: #000;
+}
+
+.active {
+    color: #67C6E3;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #67C6E3;
+}
+
+/* menu btn styling */
+.menu-btn {
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* responsive media query start */
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+
+    .brand-logo {
+        height: 2em;
+    }
+}
+
+@media (max-width: 500px) {
+    .brand-logo {
+        height: 1.5em;
+    }
+}
